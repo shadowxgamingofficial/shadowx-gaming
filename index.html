@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="en">
-<head>
+<head><link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#0b0b0f">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="SHADOWX GAMING">
+<link rel="apple-touch-icon" href="./icons/icon-192.png">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>SHADOWX GAMING | PUBG MOBILE</title>
@@ -24,7 +29,9 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-s
 @media(max-width:800px){.links{display:none}.grid,.feature{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.hero{min-height:580px}.title{font-size:30px}.cta{display:block}.cta .btns{justify-content:flex-start;margin-top:20px}}
 </style>
 </head>
-<body>
+<body><button id="install-app" type="button" hidden>
+  Install SHADOWX GAMING
+</button>
 <nav><div class="wrap navin">
 <a class="brand" href="#home">⚡SHADOWX <span>GAMING</span></a>
 <div class="links"><a href="#news">NEWS</a><a href="#arena">2V2 WOW</a><a href="#videos">VIDEOS</a><a href="#community">COMMUNITY</a><a href="#uc">UC</a></div>
@@ -69,4 +76,5 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-s
 </main>
 
 <footer><div class="wrap">© 2026 SHADOWX GAMING · Independent PUBG MOBILE community website.</div></footer>
-</body></html><a href="downloads.html">GAMES & APPS</a>
+</body></html><a href="downloads.html">GAMES & APPS</a></body>
+<script src="./install.js"></script>
