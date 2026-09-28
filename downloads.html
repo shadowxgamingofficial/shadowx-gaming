@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ShadowX Gaming - Games & Apps</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #080808;
+      color: white;
+    }
+
+    header {
+      padding: 25px 15px;
+      text-align: center;
+      background: #111;
+      border-bottom: 2px solid #00f2ea;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    header p {
+      color: #aaa;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 15px;
+      background: #0d0d0d;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      background: #181818;
+    }
+
+    nav a:hover {
+      background: #00f2ea;
+      color: black;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 25px 15px;
+    }
+
+    .title {
+      text-align: center;
+      color: #00f2ea;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #151515;
+      border: 1px solid #333;
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 4px 4px 0 #ff0050;
+    }
+
+    .icon {
+      font-size: 45px;
+    }
+
+    .card h2 {
+      margin: 10px 0;
+    }
+
+    .card p {
+      color: #aaa;
+      line-height: 1.5;
+    }
+
+    .download {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 20px;
+      border-radius: 8px;
+      background: #00f2ea;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .download:hover {
+      background: #ff0050;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #777;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🎮 ShadowX Gaming</h1>
+  <p>Games & Apps Download Center</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="downloads.html">Games & Apps</a>
+</nav>
+
+<div class="container">
+
+  <h2 class="title">🎮 Games</h2>
+
+  <div class="grid">
+
+    <!-- GAME 1 -->
+    <div class="card">
+      <div class="icon">🎮</div>
+      <h2>Game Name</h2>
+
+      <p>
+        Add your game description here.
+      </p>
+
+      <p>📦 Size: 500 MB</p>
+
+      <!-- Replace the link below with your actual game file -->
+      <a class="download"
+         href="YOUR-GAME-FILE-LINK"
+         download>
+        ⬇ Download Game
+      </a>
+    </div>
+
+
+    <!-- GAME 2 -->
+    <div class="card">
+      <div class="icon">🔥</div>
+      <h2>Another Game</h2>
+
+      <p>
+        Add your second game description here.
+      </p>
+
+      <p>📦 Size: 1 GB</p>
+
+      <a class="download"
+         href="YOUR-GAME-FILE-LINK"
+         download>
+        ⬇ Download Game
+      </a>
+    </div>
+
+  </div>
+
+
+  <h2 class="title">📱 Apps</h2>
+
+  <div class="grid">
+
+    <!-- APP 1 -->
+    <div class="card">
+      <div class="icon">📱</div>
+      <h2>App Name</h2>
+
+      <p>
+        Add your app description here.
+      </p>
+
+      <p>📦 Size: 50 MB</p>
+
+      <!-- Replace with your actual app file -->
+      <a class="download"
+         href="YOUR-APP-FILE-LINK"
+         download>
+        ⬇ Download App
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  © 2026 ShadowX Gaming
+</footer>
+
+</body>
+</html>
