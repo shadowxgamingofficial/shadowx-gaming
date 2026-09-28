@@ -4,6 +4,332 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>ShadowX Store - Games & Apps</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #080808;
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 35px 15px;
+      background: #111;
+      border-bottom: 2px solid #00f2ea;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 38px;
+    }
+
+    header p {
+      color: #aaa;
+      margin-bottom: 20px;
+    }
+
+    .search {
+      width: 90%;
+      max-width: 500px;
+      padding: 13px;
+      border: 1px solid #333;
+      border-radius: 10px;
+      background: #1a1a1a;
+      color: white;
+      font-size: 16px;
+      outline: none;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 15px;
+      background: #0d0d0d;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      background: #181818;
+    }
+
+    nav a:hover {
+      background: #00f2ea;
+      color: black;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 25px 15px;
+    }
+
+    .section-title {
+      color: #00f2ea;
+      margin-top: 35px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #151515;
+      border: 1px solid #333;
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 4px 4px 0 #ff0050;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon {
+      font-size: 45px;
+    }
+
+    .card h2 {
+      margin: 10px 0;
+    }
+
+    .card p {
+      color: #aaa;
+      line-height: 1.5;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 5px 9px;
+      border-radius: 5px;
+      background: #222;
+      color: #00f2ea;
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 11px 18px;
+      border-radius: 8px;
+      background: #00f2ea;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #ff0050;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px 15px;
+      color: #777;
+      margin-top: 30px;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🎮 SHADOWX STORE</h1>
+  <p>Games & Apps Download Center</p>
+
+  <input
+    class="search"
+    type="text"
+    id="search"
+    placeholder="🔍 Search games and apps..."
+    onkeyup="searchItems()"
+  >
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="#games">🎮 Games</a>
+  <a href="#apps">📱 Apps</a>
+  <a href="https://www.tiktok.com/@shadowx.gaming08" target="_blank">
+    TikTok
+  </a>
+</nav>
+
+<div class="container">
+
+  <h2 class="section-title" id="games">🎮 Games</h2>
+
+  <div class="grid">
+
+    <div class="card item">
+      <div class="icon">🎮</div>
+      <span class="tag">Puzzle</span>
+      <h2>2048</h2>
+      <p>Classic number puzzle game. Combine tiles and try to reach 2048.</p>
+      <a class="button"
+         href="https://gabrielecirulli.github.io/2048/"
+         target="_blank">
+        ▶ Play
+      </a>
+    </div>
+
+    <div class="card item">
+      <div class="icon">🐦</div>
+      <span class="tag">Open Source</span>
+      <h2>Flappy Bird Clone</h2>
+      <p>Add an authorized open-source version or your own game here.</p>
+      <a class="button" href="#" onclick="comingSoon(); return false;">
+        📥 Download
+      </a>
+    </div>
+
+    <div class="card item">
+      <div class="icon">🧩</div>
+      <span class="tag">Puzzle</span>
+      <h2>Puzzle Game</h2>
+      <p>Add your own puzzle game or an authorized game file here.</p>
+      <a class="button" href="#" onclick="comingSoon(); return false;">
+        📥 Download
+      </a>
+    </div>
+
+    <div class="card item">
+      <div class="icon">🚀</div>
+      <span class="tag">Arcade</span>
+      <h2>Space Game</h2>
+      <p>Add your own space game or an authorized game file here.</p>
+      <a class="button" href="#" onclick="comingSoon(); return false;">
+        📥 Download
+      </a>
+    </div>
+
+    <div class="card item">
+      <div class="icon">🏎️</div>
+      <span class="tag">Racing</span>
+      <h2>Racing Game</h2>
+      <p>Add an authorized racing game here.</p>
+      <a class="button" href="#" onclick="comingSoon(); return false;">
+        📥 Download
+      </a>
+    </div>
+
+    <div class="card item">
+      <div class="icon">⚔️</div>
+      <span class="tag">Action</span>
+      <h2>Action Game</h2>
+      <p>Add an authorized action game here.</p>
+      <a class="button" href="#" onclick="comingSoon(); return false;">
+        📥 Download
+      </a>
+    </div>
+
+  </div>
+
+
+  <h2 class="section-title" id="apps">📱 Apps</h2>
+
+  <div class="grid">
+
+    <div class="card item">
+      <div class="icon">📱</div>
+      <span class="tag">ShadowX</span>
+      <h2>ShadowX App</h2>
+      <p>Your official ShadowX application can go here.</p>
+      <a class="button" href="#" onclick="comingSoon(); return false;">
+        📥 Download
+      </a>
+    </div>
+
+    <div class="card item">
+      <div class="icon">🛠️</div>
+      <span class="tag">Tools</span>
+      <h2>Gaming Tools</h2>
+      <p>Add your own gaming utility or an authorized app.</p>
+      <a class="button" href="#" onclick="comingSoon(); return false;">
+        📥 Download
+      </a>
+    </div>
+
+    <div class="card item">
+      <div class="icon">🎨</div>
+      <span class="tag">Creative</span>
+      <h2>Creative App</h2>
+      <p>Add an app that you created or have permission to distribute.</p>
+      <a class="button" href="#" onclick="comingSoon(); return false;">
+        📥 Download
+      </a>
+    </div>
+
+    <div class="card item">
+      <div class="icon">📚</div>
+      <span class="tag">Utility</span>
+      <h2>Utility App</h2>
+      <p>Add an authorized utility app here.</p>
+      <a class="button" href="#" onclick="comingSoon(); return false;">
+        📥 Download
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  © 2026 ShadowX Gaming
+  <br><br>
+  Only games and apps that you created or have permission to distribute
+  should be uploaded here.
+</footer>
+
+<script>
+  function searchItems() {
+    const search = document
+      .getElementById("search")
+      .value
+      .toLowerCase();
+
+    const items = document.querySelectorAll(".item");
+
+    items.forEach(function(item) {
+      const text = item.innerText.toLowerCase();
+
+      if (text.includes(search)) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  }
+
+  function comingSoon() {
+    alert("Download coming soon!");
+  }
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>ShadowX Gaming - Games & Apps</title>
 
   <style>
