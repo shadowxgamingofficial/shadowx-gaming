@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ShadowX Gaming - Games & Apps</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #080b12;
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #111827;
+      padding: 25px 15px;
+      text-align: center;
+      border-bottom: 2px solid #00e5ff;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: #aaa;
+    }
+
+    nav {
+      background: #0d111a;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00e5ff;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 15px;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .title h2 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .title p {
+      color: #aaa;
+    }
+
+    .section-title {
+      margin: 35px 0 20px;
+      font-size: 24px;
+      border-left: 4px solid #00e5ff;
+      padding-left: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #111827;
+      border: 1px solid #263244;
+      border-radius: 15px;
+      padding: 22px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #00e5ff;
+      box-shadow: 0 0 18px rgba(0, 229, 255, 0.2);
+    }
+
+    .icon {
+      font-size: 55px;
+      margin-bottom: 12px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #172033;
+      color: #00e5ff;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 21px;
+    }
+
+    .card p {
+      color: #aaa;
+      font-size: 14px;
+      min-height: 42px;
+      margin-bottom: 18px;
+      line-height: 1.5;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 11px 18px;
+      background: #00e5ff;
+      color: #001014;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background: #00b8d4;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 25px;
+      text-align: center;
+      background: #111827;
+      color: #888;
+      border-top: 1px solid #263244;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🎮 ShadowX Gaming</h1>
+    <p>Games & Apps</p>
+  </header>
+
+  <nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="downloads.html">🎮 Games & Apps</a>
+  </nav>
+
+  <main class="container">
+
+    <div class="title">
+      <h2>🎮 Games & Apps</h2>
+      <p>Useful apps and games for everyone</p>
+    </div>
+
+    <!-- APPS -->
+    <h2 class="section-title">📱 Apps</h2>
+
+    <div class="grid">
+
+      <!-- VLC -->
+      <div class="card">
+        <div class="icon">🎬</div>
+        <span class="tag">Media</span>
+        <h3>VLC Media Player</h3>
+        <p>Play videos and music in many different formats.</p>
+
+        <a class="button"
+           href="https://www.videolan.org/vlc/"
+           target="_blank"
+           rel="noopener noreferrer">
+          📥 Download
+        </a>
+      </div>
+
+      <!-- Telegram -->
+      <div class="card">
+        <div class="icon">✈️</div>
+        <span class="tag">Messaging</span>
+        <h3>Telegram</h3>
+        <p>Chat with friends, join groups and follow channels.</p>
+
+        <a class="button"
+           href="https://telegram.org/apps"
+           target="_blank"
+           rel="noopener noreferrer">
+          📥 Download
+        </a>
+      </div>
+
+      <!-- Firefox -->
+      <div class="card">
+        <div class="icon">🦊</div>
+        <span class="tag">Browser</span>
+        <h3>Firefox</h3>
+        <p>A popular web browser for surfing the internet.</p>
+
+        <a class="button"
+           href="https://www.mozilla.org/firefox/"
+           target="_blank"
+           rel="noopener noreferrer">
+          📥 Download
+        </a>
+      </div>
+
+      <!-- 7-Zip -->
+      <div class="card">
+        <div class="icon">📦</div>
+        <span class="tag">Utility</span>
+        <h3>7-Zip</h3>
+        <p>Create and open compressed files on your computer.</p>
+
+        <a class="button"
+           href="https://www.7-zip.org/"
+           target="_blank"
+           rel="noopener noreferrer">
+          📥 Download
+        </a>
+      </div>
+
+      <!-- Audacity -->
+      <div class="card">
+        <div class="icon">🎙️</div>
+        <span class="tag">Audio</span>
+        <h3>Audacity</h3>
+        <p>Record and edit audio on your computer.</p>
+
+        <a class="button"
+           href="https://www.audacityteam.org/download/"
+           target="_blank"
+           rel="noopener noreferrer">
+          📥 Download
+        </a>
+      </div>
+
+    </div>
+
+
+    <!-- GAMES -->
+    <h2 class="section-title">🏎️ Games</h2>
+
+    <div class="grid">
+
+      <!-- SuperTuxKart -->
+      <div class="card">
+        <div class="icon">🏎️</div>
+        <span class="tag">Racing</span>
+        <h3>SuperTuxKart</h3>
+        <p>Free and open-source kart racing game.</p>
+
+        <a class="button"
+           href="https://supertuxkart.net/Download"
+           target="_blank"
+           rel="noopener noreferrer">
+          📥 Download
+        </a>
+      </div>
+
+      <!-- TORCS -->
+      <div class="card">
+        <div class="icon">🏁</div>
+        <span class="tag">Racing</span>
+        <h3>TORCS</h3>
+        <p>Open-source 3D racing simulator.</p>
+
+        <a class="button"
+           href="https://torcs.sourceforge.net/download/"
+           target="_blank"
+           rel="noopener noreferrer">
+          📥 Download
+        </a>
+      </div>
+
+      <!-- VDrift -->
+      <div class="card">
+        <div class="icon">🚗</div>
+        <span class="tag">Racing</span>
+        <h3>VDrift</h3>
+        <p>Open-source driving and racing simulator.</p>
+
+        <a class="button"
+           href="https://vdrift.net/"
+           target="_blank"
+           rel="noopener noreferrer">
+          📥 Download
+        </a>
+      </div>
+
+      <!-- Coming Soon -->
+      <div class="card">
+        <div class="icon">🔥</div>
+        <span class="tag">Coming Soon</span>
+        <h3>More Games</h3>
+        <p>More games will be added to ShadowX Gaming.</p>
+
+        <a class="button"
+           href="javascript:void(0)"
+           onclick="alert('Coming soon!')">
+          🎮 Coming Soon
+        </a>
+      </div>
+
+      <!-- Coming Soon -->
+      <div class="card">
+        <div class="icon">🎮</div>
+        <span class="tag">Coming Soon</span>
+        <h3>New Game</h3>
+        <p>Stay tuned for more games and updates.</p>
+
+        <a class="button"
+           href="javascript:void(0)"
+           onclick="alert('Coming soon!')">
+          🎮 Coming Soon
+        </a>
+      </div>
+
+    </div>
+
+  </
